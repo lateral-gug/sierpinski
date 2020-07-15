@@ -4,7 +4,7 @@ start_time = time.time()
 
 n = 5 #number of iterations
 
-carpet = 'white' #color of the 'carpet'
+carpet = 'white' #color of the carpet
 background = 'black' #background color
 
 plt.rcParams['axes.facecolor'] = background
