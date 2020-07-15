@@ -12,6 +12,7 @@ plt.rcParams['axes.facecolor'] = background
 plt.figure(1,(5,5))
 plt.xlim(-0.05,1.05)
 plt.ylim(-0.05,1.05)
+plt.tick_params(axis='both',which='both',bottom=False,top=False,labelbottom=False,right=False,left=False,labelleft=False)
 
 square = plt.Rectangle((0,0),1,1,fc=carpet)
 plt.gca().add_patch(square)
