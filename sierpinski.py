@@ -9,7 +9,7 @@ background = 'black' #background color
 
 plt.rcParams['axes.facecolor'] = background
 
-fig = plt.figure(1,(5,5))
+fig = plt.figure(1,(4.5,4.5))
 fig.patch.set_facecolor(background)
 plt.xlim(-0.05,1.05)
 plt.ylim(-0.05,1.05)
