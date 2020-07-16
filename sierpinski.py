@@ -21,9 +21,8 @@ plt.gca().add_patch(square)
 for m in range(1,n+1):
     for s in range(0,3**(m-1)+3):
         for r in range(0,3**(m-1)+3):
-            if (1+3*s)/3**m < 1 and (1+3*r)/3**m < 1:
-                void1 = plt.Rectangle(((1+3*s)/3**m,(1+3*r)/3**m),1/3**m,1/3**m,fc=background)
-                plt.gca().add_patch(void1)
+            void1 = plt.Rectangle(((1+3*s)/3**m,(1+3*r)/3**m),1/3**m,1/3**m,fc=background)
+            plt.gca().add_patch(void1)
 
 seconds = time.time()-start_time
 print('%.1f seconds'%(seconds))
