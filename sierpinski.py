@@ -10,6 +10,7 @@ background = 'black' #background color
 plt.rcParams['axes.facecolor'] = background
 
 fig = plt.figure(1,(4.5,4.5))
+plt.title('Iteration %.0f'%(n), color=carpet)
 fig.patch.set_facecolor(background)
 plt.xlim(-0.05,1.05)
 plt.ylim(-0.05,1.05)
@@ -27,6 +28,7 @@ for m in range(1,n+1):
 seconds = time.time()-start_time
 print('%.1f seconds'%(seconds))
 plt.show()
+plt.rcParams['axes.facecolor'] = 'white'
 
 
 
